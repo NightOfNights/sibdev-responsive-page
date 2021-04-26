@@ -30,6 +30,7 @@ body {
   font-family: Roboto, Oxygen, -apple-system, BlinkMacSystemFont, Segoe UI,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif !important;
   font-size: 16px;
+  background-color: var(--main-bg);
 }
 
 .page__wrapper {
@@ -52,7 +53,6 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px;
   padding: 40px 0 0;
 }
 
@@ -62,12 +62,13 @@ body {
   justify-content: start;
   align-items: center;
   padding-left: 40px;
-  gap: 10px;
+  margin-bottom: 20px;
 }
 
 .sidebar__main-logo-name {
   font-family: Poppins;
   font-size: 1rem;
+  margin-left: 10px;
 }
 
 .sidebar__menu {
@@ -90,7 +91,6 @@ body {
   flex-direction: row;
   align-items: center;
   padding: 21px 0 21px 40px;
-  gap: 12px;
   width: 100%;
   cursor: pointer;
   position: relative;
@@ -122,6 +122,7 @@ body {
   font-family: Open Sans;
   font-weight: 600;
   font-size: 1rem;
+  margin-left: 12px;
 }
 
 .header {
@@ -134,7 +135,6 @@ body {
 .header__wrapper {
   display: flex;
   flex-direction: column;
-  gap: 20px;
   padding: 40px 60px;
 }
 
@@ -142,19 +142,20 @@ body {
   font-family: Open Sans;
   font-weight: 600;
   font-size: 1.75rem;
+  margin-bottom: 20px;
 }
 
 .search {
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 8px;
   padding: 12px 16px;
   border: 1px solid var(--search-input-border);
   border-radius: 50px;
 }
 
 .search__input {
+  margin-left: 8px;
   width: 100%;
   padding-bottom: 0;
   outline: none;
@@ -169,12 +170,16 @@ body {
 }
 
 .search__input::-moz-placeholder {
-  line-height: 0.65rem;
+  line-height: 0.7rem;
+}
+
+.search__input::-webkit-placeholder {
+  line-height: 1rem;
 }
 
 .main {
   grid-column: 2 / span 5;
-  grid-row: 2;
+  grid-row: 2 / span 6;
   background-color: var(--main-bg);
 }
 
@@ -204,19 +209,25 @@ body {
   border-color: var(--red);
 }
 
+.coupon:active {
+  border-color: var(--red);
+}
+
 .coupon::before,
 .coupon::after {
   position: absolute;
   content: "";
-  border-top: 1px solid transparent;
-  border-right: 1px solid transparent;
-  background-color: var(--main-bg);
+  border-top: 1px solid rgba(255, 255, 255, 0);
+  border-right: 1px solid rgba(255, 255, 255, 0);
+  background-color: rgb(250, 250, 250);
   width: 7px;
   height: 7px;
   border-top-right-radius: 35%;
   top: 50%;
   z-index: 999;
   box-shadow: inset -10px 0 5px -10px var(--coupon-shadow),
+    inset 0 6px 5px -5px var(--coupon-shadow);
+  -webkit-box-shadow: inset -10px 0 5px -10px var(--coupon-shadow),
     inset 0 6px 5px -5px var(--coupon-shadow);
 }
 
@@ -237,6 +248,12 @@ body {
   border-right-color: var(--red);
 }
 
+.coupon:active::before,
+.coupon:active::after {
+  border-top-color: var(--red);
+  border-right-color: var(--red);
+}
+
 .coupon__info {
   grid-column: 1 / span 2;
   grid-row: 1;
@@ -250,7 +267,6 @@ body {
 .coupon__top-left-info {
   display: flex;
   flex-direction: column;
-  gap: 4px;
 }
 
 .coupon__title {
@@ -259,6 +275,7 @@ body {
   line-height: 1rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
+  margin-bottom: 4px;
 }
 
 .coupon__description {
@@ -270,7 +287,6 @@ body {
 .coupon__bottom-left-info {
   display: flex;
   flex-direction: column;
-  gap: 6px;
 }
 
 .coupon__num {
@@ -278,6 +294,7 @@ body {
   font-size: 2.25rem;
   line-height: 1.75rem;
   text-transform: uppercase;
+  margin-bottom: 6px;
 }
 
 .coupon__label {
@@ -325,6 +342,10 @@ body {
     cursor: pointer;
   }
 
+  .main {
+    grid-row: 2;
+  }
+
   .menu__open-icon {
     background-image: url("./assets/svg/open-menu-icon.svg");
   }
@@ -370,12 +391,11 @@ body {
   }
 
   .header__wrapper {
-    gap: 31px;
     padding: 31px 26px 27px;
   }
 
   .header__name {
-    margin-left: auto;
+    margin: 0 0 31px auto;
   }
 
   .header__name_hidden {
@@ -406,8 +426,8 @@ body {
     font-size: 0.875rem;
   }
 
-  .coupon__bottom-left-info {
-    gap: 3px;
+  .coupon__num {
+    margin-bottom: 3px;
   }
 
   .coupon__image {
@@ -476,14 +496,11 @@ body {
 
   .category__name {
     display: block;
+    margin-left: 0;
   }
 
   .search__scrolled {
     padding-left: 36px;
-  }
-
-  .search__input::placeholder {
-    font-size: 0.875rem;
   }
 
   .main__wrapper {
