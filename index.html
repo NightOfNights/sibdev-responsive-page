@@ -1,276 +1,245 @@
 <!DOCTYPE html>
 <html class="page" lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://fonts.googleapis.com/css?family=Roboto"
-    />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://fonts.googleapis.com/css?family=Poppins"
-    />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans:500,600"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styles.css" />
-    <title>Responsive page</title>
-    <script src="script.js" defer></script>
-  </head>
 
-  <body class="page__body">
-    <div class="page__wrapper">
-      <div class="sidebar">
-        <div class="sidebar__wrapper">
-          <div class="sidebar__menu menu">
-            <div class="menu__icon menu__open-icon"></div>
-          </div>
-          <div class="sidebar__top">
-            <img
-              src="assets/svg/main-logo-icon.svg"
-              alt="Main logo"
-              class="sidebar__main-logo"
-            />
-            <div class="sidebar__main-logo-name">BECO</div>
-          </div>
-          <ul class="sidebar__categories">
-            <div class="category category_active">
-              <img
-                src="assets/svg/catalog-icon.svg"
-                alt="Catalog icon"
-                class="category__logo"
-              />
-              <div class="category__name">Каталог</div>
-            </div>
-            <div class="category">
-              <img
-                src="assets/svg/health-icon.svg"
-                alt="Health icon"
-                class="category__logo"
-              />
-              <div class="category__name">Здоровье</div>
-            </div>
-            <div class="category">
-              <img
-                src="assets/svg/beauty-icon.svg"
-                alt="Beauty icon"
-                class="category__logo"
-              />
-              <div class="category__name">Красота</div>
-            </div>
-            <div class="category">
-              <img
-                src="assets/svg/enjoy-icon.svg"
-                alt="Enjoy icon"
-                class="category__logo"
-              />
-              <div class="category__name">Развлечение</div>
-            </div>
-            <div class="category">
-              <img
-                src="assets/svg/car-icon.svg"
-                alt="Car icon"
-                class="category__logo"
-              />
-              <div class="category__name">Авто</div>
-            </div>
-          </ul>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto" />
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Poppins" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:500,600" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <title>Responsive page</title>
+  <script src="script.js" defer></script>
+
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript">
+    (function (m, e, t, r, i, k, a) {
+      m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
+      m[i].l = 1 * new Date();
+      for (var j = 0; j < document.scripts.length; j++) { if (document.scripts[j].src === r) { return; } }
+      k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+    })
+      (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+    ym(99954149, "init", {
+      clickmap: true,
+      trackLinks: true,
+      accurateTrackBounce: true,
+      webvisor: true
+    });
+  </script>
+  <noscript>
+    <div><img src="https://mc.yandex.ru/watch/99954149" style="position:absolute; left:-9999px;" alt="" /></div>
+  </noscript>
+  <!-- /Yandex.Metrika counter -->
+</head>
+
+<body class="page__body">
+  <div class="page__wrapper">
+    <div class="sidebar">
+      <div class="sidebar__wrapper">
+        <div class="sidebar__menu menu">
+          <div class="menu__icon menu__open-icon"></div>
         </div>
-      </div>
-      <div class="header">
-        <div class="header__wrapper">
-          <div class="header__name">Каталог</div>
-          <div class="header__search search">
-            <img
-              src="assets/svg/search-icon.svg"
-              alt="Search icon"
-              class="search__icon"
-            />
-            <input
-              type="text"
-              placeholder="Какой магазин вам нужен?"
-              class="search__input"
-            />
-          </div>
+        <div class="sidebar__top">
+          <img src="assets/svg/main-logo-icon.svg" alt="Main logo" class="sidebar__main-logo" />
+          <div class="sidebar__main-logo-name">BECO</div>
         </div>
-      </div>
-      <div class="main">
-        <ul class="main__wrapper main__coupons">
-          <div class="coupon" ontouchstart="">
-            <div class="coupon__info">
-              <div class="coupon__top-info">
-                <div class="coupon__title">Пробка на мира</div>
-                <div class="coupon__description">Вечер для двоих</div>
-              </div>
-              <div class="coupon__bottom-info">
-                <div class="coupon__num">-50%</div>
-                <div class="coupon__label">Скидка</div>
-              </div>
-            </div>
-            <img src="assets/img/image1.jpg" alt="img1" class="coupon__image" />
+        <ul class="sidebar__categories">
+          <div class="category category_active">
+            <img src="assets/svg/catalog-icon.svg" alt="Catalog icon" class="category__logo" />
+            <div class="category__name">Каталог</div>
           </div>
-          <div class="coupon" ontouchstart="">
-            <div class="coupon__info">
-              <div class="coupon__top-left-info">
-                <div class="coupon__title">Кино и немцы</div>
-                <div class="coupon__description">Бесплатный бокал пива</div>
-              </div>
-              <div class="coupon__bottom-left-info">
-                <div class="coupon__num">Варвар</div>
-                <div class="coupon__label">Промокод</div>
-              </div>
-            </div>
-            <img src="assets/img/image2.jpg" alt="img2" class="coupon__image" />
+          <div class="category">
+            <img src="assets/svg/health-icon.svg" alt="Health icon" class="category__logo" />
+            <div class="category__name">Здоровье</div>
           </div>
-          <div class="coupon" ontouchstart="">
-            <div class="coupon__info">
-              <div class="coupon__top-left-info">
-                <div class="coupon__title">Valery cakes</div>
-                <div class="coupon__description">Торт</div>
-              </div>
-              <div class="coupon__bottom-left-info">
-                <div class="coupon__num">30%</div>
-                <div class="coupon__label">Скидка</div>
-              </div>
-            </div>
-            <img src="assets/img/image3.jpg" alt="img3" class="coupon__image" />
+          <div class="category">
+            <img src="assets/svg/beauty-icon.svg" alt="Beauty icon" class="category__logo" />
+            <div class="category__name">Красота</div>
           </div>
-          <div class="coupon" ontouchstart="">
-            <div class="coupon__info">
-              <div class="coupon__top-left-info">
-                <div class="coupon__title">Sushi sell</div>
-                <div class="coupon__description">Набор "Праздник"</div>
-              </div>
-              <div class="coupon__bottom-left-info">
-                <div class="coupon__num">45%</div>
-                <div class="coupon__label">Скидка</div>
-              </div>
-            </div>
-            <img src="assets/img/image4.jpg" alt="img4" class="coupon__image" />
+          <div class="category">
+            <img src="assets/svg/enjoy-icon.svg" alt="Enjoy icon" class="category__logo" />
+            <div class="category__name">Развлечение</div>
           </div>
-          <div class="coupon" ontouchstart="">
-            <div class="coupon__info">
-              <div class="coupon__top-left-info">
-                <div class="coupon__title">Mangosteen</div>
-                <div class="coupon__description">Фрукт в подарок</div>
-              </div>
-              <div class="coupon__bottom-left-info">
-                <div class="coupon__num">J130</div>
-                <div class="coupon__label">Промокод</div>
-              </div>
-            </div>
-            <img src="assets/img/image5.jpg" alt="img5" class="coupon__image" />
-          </div>
-          <div class="coupon" ontouchstart="">
-            <div class="coupon__info">
-              <div class="coupon__top-left-info">
-                <div class="coupon__title">Теленок табака</div>
-                <div class="coupon__description">Стейк "Мачете"</div>
-              </div>
-              <div class="coupon__bottom-left-info">
-                <div class="coupon__num">20%</div>
-                <div class="coupon__label">Скидка</div>
-              </div>
-            </div>
-            <img src="assets/img/image6.jpg" alt="img6" class="coupon__image" />
-          </div>
-          <div class="coupon" ontouchstart="">
-            <div class="coupon__info">
-              <div class="coupon__top-left-info">
-                <div class="coupon__title">Fire food</div>
-                <div class="coupon__description">Вторая шаурма в подарок</div>
-              </div>
-              <div class="coupon__bottom-left-info">
-                <div class="coupon__num">Огонь</div>
-                <div class="coupon__label">Промокод</div>
-              </div>
-            </div>
-            <img src="assets/img/image7.jpg" alt="img7" class="coupon__image" />
-          </div>
-          <div class="coupon" ontouchstart="">
-            <div class="coupon__info">
-              <div class="coupon__top-left-info">
-                <div class="coupon__title">Aroma Cremeria</div>
-                <div class="coupon__description">Джелато "Пармезан"</div>
-              </div>
-              <div class="coupon__bottom-left-info">
-                <div class="coupon__num">20%</div>
-                <div class="coupon__label">Скидка</div>
-              </div>
-            </div>
-            <img src="assets/img/image8.jpg" alt="img8" class="coupon__image" />
-          </div>
-          <div class="coupon" ontouchstart="">
-            <div class="coupon__info">
-              <div class="coupon__top-left-info">
-                <div class="coupon__title">Пробка на мира</div>
-                <div class="coupon__description">Вечер для двоих</div>
-              </div>
-              <div class="coupon__bottom-left-info">
-                <div class="coupon__num">J130</div>
-                <div class="coupon__label">Купон</div>
-              </div>
-            </div>
-            <img src="assets/img/image1.jpg" alt="img9" class="coupon__image" />
-          </div>
-          <div class="coupon" ontouchstart="">
-            <div class="coupon__info">
-              <div class="coupon__top-left-info">
-                <div class="coupon__title">Кино и немцы</div>
-                <div class="coupon__description">Бесплатный бокал пива</div>
-              </div>
-              <div class="coupon__bottom-left-info">
-                <div class="coupon__num">Варвар</div>
-                <div class="coupon__label">Промокод</div>
-              </div>
-            </div>
-            <img
-              src="assets/img/image2.jpg"
-              alt="img10"
-              class="coupon__image"
-            />
-          </div>
-          <div class="coupon" ontouchstart="">
-            <div class="coupon__info">
-              <div class="coupon__top-left-info">
-                <div class="coupon__title">Valery cakes</div>
-                <div class="coupon__description">Торт</div>
-              </div>
-              <div class="coupon__bottom-left-info">
-                <div class="coupon__num">30%</div>
-                <div class="coupon__label">Скидка</div>
-              </div>
-            </div>
-            <img
-              src="assets/img/image3.jpg"
-              alt="img11"
-              class="coupon__image"
-            />
-          </div>
-          <div class="coupon" ontouchstart="">
-            <div class="coupon__info">
-              <div class="coupon__top-left-info">
-                <div class="coupon__title">Sushi sell</div>
-                <div class="coupon__description">Набор "Праздник"</div>
-              </div>
-              <div class="coupon__bottom-left-info">
-                <div class="coupon__num">45%</div>
-                <div class="coupon__label">Скидка</div>
-              </div>
-            </div>
-            <img
-              src="assets/img/image4.jpg"
-              alt="img12"
-              class="coupon__image"
-            />
+          <div class="category">
+            <img src="assets/svg/car-icon.svg" alt="Car icon" class="category__logo" />
+            <div class="category__name">Авто</div>
           </div>
         </ul>
       </div>
     </div>
-  </body>
+    <div class="header">
+      <div class="header__wrapper">
+        <div class="header__name">Каталог</div>
+        <div class="header__search search">
+          <img src="assets/svg/search-icon.svg" alt="Search icon" class="search__icon" />
+          <input type="text" placeholder="Какой магазин вам нужен?" class="search__input" />
+        </div>
+      </div>
+    </div>
+    <div class="main">
+      <ul class="main__wrapper main__coupons">
+        <div class="coupon" ontouchstart="">
+          <div class="coupon__info">
+            <div class="coupon__top-info">
+              <div class="coupon__title">Пробка на мира</div>
+              <div class="coupon__description">Вечер для двоих</div>
+            </div>
+            <div class="coupon__bottom-info">
+              <div class="coupon__num">-50%</div>
+              <div class="coupon__label">Скидка</div>
+            </div>
+          </div>
+          <img src="assets/img/image1.jpg" alt="img1" class="coupon__image" />
+        </div>
+        <div class="coupon" ontouchstart="">
+          <div class="coupon__info">
+            <div class="coupon__top-left-info">
+              <div class="coupon__title">Кино и немцы</div>
+              <div class="coupon__description">Бесплатный бокал пива</div>
+            </div>
+            <div class="coupon__bottom-left-info">
+              <div class="coupon__num">Варвар</div>
+              <div class="coupon__label">Промокод</div>
+            </div>
+          </div>
+          <img src="assets/img/image2.jpg" alt="img2" class="coupon__image" />
+        </div>
+        <div class="coupon" ontouchstart="">
+          <div class="coupon__info">
+            <div class="coupon__top-left-info">
+              <div class="coupon__title">Valery cakes</div>
+              <div class="coupon__description">Торт</div>
+            </div>
+            <div class="coupon__bottom-left-info">
+              <div class="coupon__num">30%</div>
+              <div class="coupon__label">Скидка</div>
+            </div>
+          </div>
+          <img src="assets/img/image3.jpg" alt="img3" class="coupon__image" />
+        </div>
+        <div class="coupon" ontouchstart="">
+          <div class="coupon__info">
+            <div class="coupon__top-left-info">
+              <div class="coupon__title">Sushi sell</div>
+              <div class="coupon__description">Набор "Праздник"</div>
+            </div>
+            <div class="coupon__bottom-left-info">
+              <div class="coupon__num">45%</div>
+              <div class="coupon__label">Скидка</div>
+            </div>
+          </div>
+          <img src="assets/img/image4.jpg" alt="img4" class="coupon__image" />
+        </div>
+        <div class="coupon" ontouchstart="">
+          <div class="coupon__info">
+            <div class="coupon__top-left-info">
+              <div class="coupon__title">Mangosteen</div>
+              <div class="coupon__description">Фрукт в подарок</div>
+            </div>
+            <div class="coupon__bottom-left-info">
+              <div class="coupon__num">J130</div>
+              <div class="coupon__label">Промокод</div>
+            </div>
+          </div>
+          <img src="assets/img/image5.jpg" alt="img5" class="coupon__image" />
+        </div>
+        <div class="coupon" ontouchstart="">
+          <div class="coupon__info">
+            <div class="coupon__top-left-info">
+              <div class="coupon__title">Теленок табака</div>
+              <div class="coupon__description">Стейк "Мачете"</div>
+            </div>
+            <div class="coupon__bottom-left-info">
+              <div class="coupon__num">20%</div>
+              <div class="coupon__label">Скидка</div>
+            </div>
+          </div>
+          <img src="assets/img/image6.jpg" alt="img6" class="coupon__image" />
+        </div>
+        <div class="coupon" ontouchstart="">
+          <div class="coupon__info">
+            <div class="coupon__top-left-info">
+              <div class="coupon__title">Fire food</div>
+              <div class="coupon__description">Вторая шаурма в подарок</div>
+            </div>
+            <div class="coupon__bottom-left-info">
+              <div class="coupon__num">Огонь</div>
+              <div class="coupon__label">Промокод</div>
+            </div>
+          </div>
+          <img src="assets/img/image7.jpg" alt="img7" class="coupon__image" />
+        </div>
+        <div class="coupon" ontouchstart="">
+          <div class="coupon__info">
+            <div class="coupon__top-left-info">
+              <div class="coupon__title">Aroma Cremeria</div>
+              <div class="coupon__description">Джелато "Пармезан"</div>
+            </div>
+            <div class="coupon__bottom-left-info">
+              <div class="coupon__num">20%</div>
+              <div class="coupon__label">Скидка</div>
+            </div>
+          </div>
+          <img src="assets/img/image8.jpg" alt="img8" class="coupon__image" />
+        </div>
+        <div class="coupon" ontouchstart="">
+          <div class="coupon__info">
+            <div class="coupon__top-left-info">
+              <div class="coupon__title">Пробка на мира</div>
+              <div class="coupon__description">Вечер для двоих</div>
+            </div>
+            <div class="coupon__bottom-left-info">
+              <div class="coupon__num">J130</div>
+              <div class="coupon__label">Купон</div>
+            </div>
+          </div>
+          <img src="assets/img/image1.jpg" alt="img9" class="coupon__image" />
+        </div>
+        <div class="coupon" ontouchstart="">
+          <div class="coupon__info">
+            <div class="coupon__top-left-info">
+              <div class="coupon__title">Кино и немцы</div>
+              <div class="coupon__description">Бесплатный бокал пива</div>
+            </div>
+            <div class="coupon__bottom-left-info">
+              <div class="coupon__num">Варвар</div>
+              <div class="coupon__label">Промокод</div>
+            </div>
+          </div>
+          <img src="assets/img/image2.jpg" alt="img10" class="coupon__image" />
+        </div>
+        <div class="coupon" ontouchstart="">
+          <div class="coupon__info">
+            <div class="coupon__top-left-info">
+              <div class="coupon__title">Valery cakes</div>
+              <div class="coupon__description">Торт</div>
+            </div>
+            <div class="coupon__bottom-left-info">
+              <div class="coupon__num">30%</div>
+              <div class="coupon__label">Скидка</div>
+            </div>
+          </div>
+          <img src="assets/img/image3.jpg" alt="img11" class="coupon__image" />
+        </div>
+        <div class="coupon" ontouchstart="">
+          <div class="coupon__info">
+            <div class="coupon__top-left-info">
+              <div class="coupon__title">Sushi sell</div>
+              <div class="coupon__description">Набор "Праздник"</div>
+            </div>
+            <div class="coupon__bottom-left-info">
+              <div class="coupon__num">45%</div>
+              <div class="coupon__label">Скидка</div>
+            </div>
+          </div>
+          <img src="assets/img/image4.jpg" alt="img12" class="coupon__image" />
+        </div>
+      </ul>
+    </div>
+  </div>
+</body>
+
 </html>
